@@ -1,25 +1,31 @@
-package org.example;
-
-import java.util.ArrayList;
-
 public class veiculo {
+
     private String placa;
     private String modelo;
-    private ArrayList<vaga>vagas;
 
-    public String getPlaca(){
+    // Construtor
+    public void veiculo(String placa, String modelo) {
+        this.placa = placa;
+        this.modelo = modelo;
+    }
+
+    // Getter e Setter da placa
+    public String getPlaca() {
         return placa;
     }
-    public String setPlaca(){
-        return placa;
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
-    public String getModelo(){
-        return modelo;
-    }
-    public String setModelo(){
+
+    // Getter e Setter do modelo
+    public String getModelo() {
         return modelo;
     }
 
-
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
 }
+
 

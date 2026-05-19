@@ -2,7 +2,7 @@ package org.example;
 
 public class Estacionamento {
 
-    private Vaga[] vagas;
+    private vaga[] vagas;
 
     // Construtor
     public Estacionamento(int quantidadeVagas) {
@@ -15,9 +15,9 @@ public class Estacionamento {
     }
 
     // Registrar entrada
-    public void registrarEntrada(Veiculo carro) {
+    public void registrarEntrada(veiculo carro) {
 
-        for (Vaga vaga : vagas) {
+        for (vaga vaga : vagas) {
 
             if (!vaga.isOcupada()) {
                 vaga.estacionar(carro);
@@ -45,7 +45,7 @@ public class Estacionamento {
 
         System.out.println("\nVagas livres:");
 
-        for (Vaga vaga : vagas) {
+        for (vaga vaga : vagas) {
 
             if (!vaga.isOcupada()) {
                 System.out.println("Vaga " + vaga.getNumero());
@@ -53,5 +53,3 @@ public class Estacionamento {
         }
     }
 }
-
-
