@@ -2,7 +2,7 @@ package org.example;
 import java.time.LocalDateTime;
 
 public class Ticket {
-    veiculo carro;
+    Veiculo carro;
     LocalDateTime horaEntrada;
     LocalDateTime horaSaida;
 }
